@@ -24,10 +24,10 @@ namespace moar
 		concept CommonType = CallingConvention<T> || Variadic<T>;
 #ifdef _WIN32
 		template<typename T>
-		concept ModuleName = std::is_same_v<T, nullptr_t> || std::is_same_v<T, LPCTSTR>;
+		concept ModuleName = std::is_same_v<T, std::nullptr_t> || std::is_same_v<T, LPCTSTR>;
 #else
 		template<typename T>
-		concept ModuleName = std::is_same_v<T, nullptr_t> || std::is_same_v<T, const char*>;
+		concept ModuleName = std::is_same_v<T, std::nullptr_t> || std::is_same_v<T, const char*>;
 #endif // WIN32
 	}
 }

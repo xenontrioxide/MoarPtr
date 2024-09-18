@@ -1,0 +1,6 @@
+{
+  "name": "moarptr",
+  "dependencies": [
+    "gtest"
+  ]
+}
